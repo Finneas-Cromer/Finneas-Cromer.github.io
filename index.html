@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Professional portfolio of Finn Cromer, Business student at the University of Utah.">
-  <title>Finn Cromer | Business Student Portfolio</title>
+  <meta name="description" content="Professional portfolio of Finn Cromer, Information Systems student at the University of Utah.">
+  <title>Finn Cromer | Portfolio</title>
   <style>
     :root {
       --crimson: #be0000;
@@ -109,6 +109,31 @@
       letter-spacing: 0.04em;
     }
 
+    /* Resume */
+    .btn {
+      display: inline-block;
+      background: var(--crimson);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.6rem 1.3rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+    .btn:hover, .btn:focus { background: #7a0000; }
+    .resume-block {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    .resume-block h3 { font-size: 1.15rem; margin-bottom: 0.6rem; color: var(--crimson); }
+    .resume-block h4 { font-size: 1rem; margin-top: 0.8rem; }
+    .resume-block .meta { font-size: 0.9rem; color: var(--gray); margin-bottom: 0.3rem; }
+    .resume-block ul { margin-left: 1.25rem; color: var(--gray); }
+    .resume-block li { margin-bottom: 0.25rem; }
+
     /* Contact */
     .contact-list { list-style: none; }
     .contact-list li { margin-bottom: 0.4rem; color: var(--gray); }
@@ -137,8 +162,8 @@
 
   <header>
     <h1>Finn Cromer</h1>
-    <p>Business Student</p>
-    <p>University of Utah | David Eccles School of Business</p>
+    <p>Information Systems Student</p>
+    <p>University of Utah</p>
   </header>
 
   <main>
@@ -146,15 +171,14 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I am a General Business major at the University of Utah. I graduate in 2029.
+        I am a General Business major at the University of Utah, and I graduate in 2029.
         I am interested in accounting and in supply chain and warehouse management.
         I like finding ways to make business processes simpler and more accurate.
         I am also curious about AI. I use tools like Claude and ChatGPT to analyze
-        information, draft ideas, and work faster. I always check the results myself.
-        On the technical side, I enjoy working with data. I use Excel and Tableau to
-        turn numbers into clear charts and takeaways. This portfolio is where I will
-        share my class projects and show how my skills grow. I hope to use business
-        knowledge and technology together to solve real problems.
+        information, draft ideas, and work faster. I use Excel and Tableau to turn
+        numbers into clear charts and takeaways. This portfolio is where I will share
+        my class projects and show how my skills grow. I hope to use business knowledge
+        and technology together to solve real problems.
       </p>
     </section>
 
@@ -202,7 +226,64 @@
 
     <section id="resume">
       <h2>Resume</h2>
-      <p>Resume coming soon.</p>
+      <p><a class="btn" href="resume.pdf" download>Download my resume (PDF)</a></p>
+
+      <div class="resume-block">
+        <h3>Education</h3>
+        <h4>University of Utah, David Eccles School of Business</h4>
+        <p class="meta">Bachelor of Science, General Business | Expected 2029</p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Experience</h3>
+        <h4>Evergreen Mountain Bike Alliance, Seattle, WA</h4>
+        <p class="meta">Head Coach (Summer 2025) | Assistant Coach (Summer 2024)</p>
+        <ul>
+          <li>Led weekly training sessions for groups of up to a dozen riders across multiple skill levels.</li>
+          <li>Managed and mentored assistant coaches and oversaw scheduling and daily operations.</li>
+          <li>Taught technical riding, trail safety, and rider progression planning.</li>
+        </ul>
+        <h4>ACI Mechanical, Seattle, WA</h4>
+        <p class="meta">Business Operations Intern | Spring 2024</p>
+        <ul>
+          <li>Joined weekly operations and finance meetings with company leadership.</li>
+          <li>Reviewed balance sheet structure, financial reporting, and project cost-tracking.</li>
+          <li>Gained hands-on exposure to project delivery and financial decision-making.</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <h3>Projects</h3>
+        <h4>Prosperity Promotion &amp; Entrepreneurship Program, Accra, Ghana</h4>
+        <p class="meta">Student Consultant | Spring 2026</p>
+        <ul>
+          <li>Worked with a small student team to analyze a local business owner's model and operations.</li>
+          <li>Presented a slideshow and written proposal of recommendations.</li>
+        </ul>
+        <h4>OSC 2030 Business Statistics Research Project</h4>
+        <p class="meta">Researcher &amp; Presenter | Spring 2026</p>
+        <ul>
+          <li>Wrote a 1,000-1,500 word research paper on Vail Resorts' use of statistics in decision-making.</li>
+          <li>Presented key findings to the class.</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <h3>Activities &amp; Leadership</h3>
+        <ul>
+          <li><strong>Business, Entrepreneur, and Investment Club</strong>, University of Utah (Member, 2025 - Present)</li>
+          <li><strong>Competitive Downhill Mountain Biking &amp; Skiing</strong> (regional and national level)</li>
+          <li><strong>Volunteer:</strong> local food bank and trail building and maintenance, Seattle, WA</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <h3>Skills &amp; Certifications</h3>
+        <ul>
+          <li><strong>Skills:</strong> Microsoft Office 365 (Excel, Word, PowerPoint), Canva, Tableau</li>
+          <li><strong>Certifications:</strong> Backcountry Medical First Aid, Northwest Avalanche Center Training, CPR Certified, Certified Lifeguard</li>
+        </ul>
+      </div>
     </section>
 
     <section id="contact">
@@ -210,7 +291,7 @@
       <ul class="contact-list">
         <li><strong>University email:</strong> <a href="mailto:YOUR-UNID@umail.utah.edu">YOUR-UNID@umail.utah.edu</a></li>
         <li><strong>GitHub:</strong> <a href="https://github.com/YOUR-USERNAME">github.com/YOUR-USERNAME</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">linkedin.com/in/YOUR-LINKEDIN</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/finneas-cromer">linkedin.com/in/finneas-cromer</a></li>
       </ul>
     </section>
 
