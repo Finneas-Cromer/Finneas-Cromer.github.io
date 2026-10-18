@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional portfolio of Finn Cromer, Business student at the University of Utah.">
+  <title>Finn Cromer | Business Student Portfolio</title>
+  <style>
+    :root {
+      --crimson: #be0000;
+      --dark: #1f2933;
+      --gray: #52606d;
+      --light: #f5f7fa;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--dark);
+      background: var(--light);
+      line-height: 1.6;
+    }
+    a { color: var(--crimson); }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--dark);
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.25rem 1.5rem;
+      padding: 0.9rem 1rem;
+    }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+    }
+    nav a:hover, nav a:focus { border-bottom-color: var(--crimson); }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--crimson), #7a0000);
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 { font-size: clamp(2rem, 6vw, 3.25rem); }
+    header p { font-size: 1.15rem; margin-top: 0.4rem; }
+
+    /* Sections */
+    main { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    section { padding: 3rem 0 1rem; }
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 3px solid var(--crimson);
+      display: inline-block;
+    }
+    p { color: var(--gray); }
+
+    /* Skills */
+    .skills {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .skills li {
+      background: var(--white);
+      border: 1px solid #d9e2ec;
+      border-radius: 999px;
+      padding: 0.35rem 1rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 1.25rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      border-top: 4px solid var(--crimson);
+    }
+    .card h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+    .card .status {
+      display: inline-block;
+      margin-top: 0.7rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* Contact */
+    .contact-list { list-style: none; }
+    .contact-list li { margin-bottom: 0.4rem; color: var(--gray); }
+
+    footer {
+      margin-top: 3rem;
+      background: var(--dark);
+      color: #cbd2d9;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Finn Cromer</h1>
+    <p>Business Student</p>
+    <p>University of Utah | David Eccles School of Business</p>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a General Business major at the University of Utah. I graduate in 2029.
+        I am interested in accounting and in supply chain and warehouse management.
+        I like finding ways to make business processes simpler and more accurate.
+        I am also curious about AI. I use tools like Claude and ChatGPT to analyze
+        information, draft ideas, and work faster. I always check the results myself.
+        On the technical side, I enjoy working with data. I use Excel and Tableau to
+        turn numbers into clear charts and takeaways. This portfolio is where I will
+        share my class projects and show how my skills grow. I hope to use business
+        knowledge and technology together to solve real problems.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Microsoft Excel</li>
+        <li>Microsoft Office 365</li>
+        <li>Tableau</li>
+        <li>Canva</li>
+        <li>Data Analytics</li>
+        <li>AI Prompt Engineering</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>AI Business Analysis</h3>
+          <p>Analyze business data using AI tools like ChatGPT and Claude.</p>
+          <span class="status">Coming soon</span>
+        </article>
+        <article class="card">
+          <h3>Data Visualization</h3>
+          <p>A dashboard built with Tableau to show key business trends.</p>
+          <span class="status">Coming soon</span>
+        </article>
+        <article class="card">
+          <h3>Web Development</h3>
+          <p>A responsive website built with HTML and CSS.</p>
+          <span class="status">Coming soon</span>
+        </article>
+        <article class="card">
+          <h3>Process Improvement</h3>
+          <p>An AI-assisted redesign of a business workflow.</p>
+          <span class="status">Coming soon</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Resume coming soon.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><strong>University email:</strong> <a href="mailto:YOUR-UNID@umail.utah.edu">YOUR-UNID@umail.utah.edu</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/YOUR-USERNAME">github.com/YOUR-USERNAME</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">linkedin.com/in/YOUR-LINKEDIN</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Finn Cromer. Built for IS 3060.</p>
+  </footer>
+
+</body>
+</html>
